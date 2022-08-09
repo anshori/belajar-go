@@ -8,7 +8,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", handler.HandlerIndex)
-	http.HandleFunc("/api", handler.HandlerIndex)
+	http.HandleFunc("/api", handler.HandlerApi)
 	http.HandleFunc("/gallery", handler.HandlerGallery)
 	http.Handle("/static/",
 		http.StripPrefix("/static/",
