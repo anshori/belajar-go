@@ -9,12 +9,11 @@ import (
 func main() {
 	http.HandleFunc("/", handler.HandlerIndex)
 	http.HandleFunc("/api", handler.HandlerApi)
-	http.HandleFunc("/gallery", handler.HandlerGallery)
 	http.Handle("/static/",
 		http.StripPrefix("/static/",
 			http.FileServer(http.Dir("assets"))))
 
-	address := "localhost:9000"
+	address := ":8090"
 	fmt.Printf("server started at %s\n", address)
 	err := http.ListenAndServe(address, nil)
 	if err != nil {
