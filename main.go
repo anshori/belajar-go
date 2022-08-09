@@ -13,7 +13,7 @@ func main() {
 		http.StripPrefix("/static/",
 			http.FileServer(http.Dir("assets"))))
 
-	address := ":8091"
+	address := ":8090"
 	fmt.Printf("server started at %s\n", address)
 	err := http.ListenAndServe(address, nil)
 	if err != nil {
