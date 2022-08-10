@@ -5,4 +5,4 @@ Menampilkan peta lokasi kota dengan menggunakan golang geojson
 
 ___   
 
-Demo [https://belajargo.unsorry.net/](https://belajargo.unsorry.net/)
+Demo [https://belajargolang.unsorry.net/](https://belajargolang.unsorry.net/)
